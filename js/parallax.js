@@ -83,7 +83,12 @@ $(document).ready(function () {
     var $bg8 = $('#bg8');
     var bg8 = $("#bg8 .parallax-bg");
     var $bg9 = $('#bg9');
-    var bg9 = $("#bg9 .parallax-bg"); // TODO add new variables if needed
+    var bg9 = $("#bg9 .parallax-bg");
+    var $bg10 = $('#bg10');
+    var bg10 = $("#bg10 .parallax-bg");
+    var $bg11 = $('#bg11');
+    var bg11 = $("#bg11 .parallax-bg");
+     // TODO add new variables if needed
 
     var windowHeight = $window.height(); //get the height of the window
 
@@ -115,10 +120,10 @@ $(document).ready(function () {
             bg1.css({'backgroundPosition': newPos(50, windowHeight, pos, 0, 0.1)});
         }
         if ($bg2.hasClass("inview")) {
-            bg2.css({'backgroundPosition': newPos(50, windowHeight, pos, 0, 0.1)});
+            bg2.css({'backgroundPosition': newPos(50, windowHeight, pos, 200, 0.2)});
         }
         if ($bg3.hasClass("inview")) {
-            bg3.css({'backgroundPosition': newPos(50, windowHeight, pos, 200, 0.5)});
+            bg3.css({'backgroundPosition': newPos(50, windowHeight, pos, 100, 0.5)});
         }
         if ($bg4.hasClass("inview")) {
             bg4.css({'backgroundPosition': newPos(50, windowHeight, pos, 500, 0.7)});
@@ -127,17 +132,25 @@ $(document).ready(function () {
             bg5.css({'backgroundPosition': newPos(50, windowHeight, pos, 4000, 0.04)});
         }
         if ($bg6.hasClass("inview")) {
-            bg6.css({'backgroundPosition': newPos(50, windowHeight, pos, 3000, 0.1)});
+            bg6.css({'backgroundPosition': newPos(50, windowHeight, pos, 600, 0.2)});
         }
         if ($bg7.hasClass("inview")) {
-            bg7.css({'backgroundPosition': newPos(50, windowHeight, pos, 1000, 0.5)});
+            bg7.css({'backgroundPosition': newPos(50, windowHeight, pos, -200, 0.5)});
         }
         if ($bg8.hasClass("inview")) {
-            bg8.css({'backgroundPosition': newPos(50, windowHeight, pos, -1500, 0.3)});
+            bg8.css({'backgroundPosition': newPos(50, windowHeight, pos, 1500, 0.3)});
         }
         if ($bg9.hasClass("inview")) {
             bg9.css({'backgroundPosition': newPos(50, windowHeight, pos, 700, 0.2)});
-        } // TODO add new rules if needed
+        }
+        if ($bg10.hasClass("inview")) {
+            bg10.css({'backgroundPosition': newPos(50, windowHeight, pos, 2300, 0.2)});
+        }
+        if ($bg11.hasClass("inview")) {
+            bg11.css({'backgroundPosition': newPos(50, windowHeight, pos, 700, 0.2)});
+        }
+
+        // TODO add new rules if needed
     }
 
     //MOBILE OPTIMIZED PARALLAX EXECUTION
