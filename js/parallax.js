@@ -3,10 +3,10 @@
         var height = window.innerHeight; // Safari, Opera
         var mode = document.compatMode;
 
-        if ( (mode || !$.support.boxModel) ) { // IE, Gecko
+        if ((mode || !$.support.boxModel)) { // IE, Gecko
             height = (mode == 'CSS1Compat') ?
-            document.documentElement.clientHeight : // Standards
-            document.body.clientHeight; // Quirks
+                document.documentElement.clientHeight : // Standards
+                document.body.clientHeight; // Quirks
         }
         return height;
     }
@@ -111,15 +111,33 @@ $(document).ready(function () {
     //function to be called whenever the window is scrolled or resized
     function Move() {
         var pos = $window.scrollTop(); //position of the scrollbar
-        if ($bg1.hasClass("inview")) {bg1.css({'backgroundPosition': newPos(50, windowHeight, pos, 0, 0.1)});}
-        if ($bg2.hasClass("inview")) {bg2.css({'backgroundPosition': newPos(50, windowHeight, pos, 0, 0.1)});}
-        if ($bg3.hasClass("inview")) {bg3.css({'backgroundPosition': newPos(50, windowHeight, pos, 200, 0.5)});}
-        if ($bg4.hasClass("inview")) {bg4.css({'backgroundPosition': newPos(50, windowHeight, pos, 500, 0.7)});}
-        if ($bg5.hasClass("inview")) {bg5.css({'backgroundPosition': newPos(50, windowHeight, pos, 4000, 0.04)});}
-        if ($bg6.hasClass("inview")) {bg6.css({'backgroundPosition': newPos(50, windowHeight, pos, 1000, 0.1)});}
-        if ($bg7.hasClass("inview")) {bg7.css({'backgroundPosition': newPos(50, windowHeight, pos, 1000, 0.5)});}
-        if ($bg8.hasClass("inview")) {bg8.css({'backgroundPosition': newPos(50, windowHeight, pos, -1500, 0.3)});}
-        if ($bg9.hasClass("inview")) {bg9.css({'backgroundPosition': newPos(50, windowHeight, pos, 700, 0.2)});} // TODO add new rules if needed
+        if ($bg1.hasClass("inview")) {
+            bg1.css({'backgroundPosition': newPos(50, windowHeight, pos, 0, 0.1)});
+        }
+        if ($bg2.hasClass("inview")) {
+            bg2.css({'backgroundPosition': newPos(50, windowHeight, pos, 0, 0.1)});
+        }
+        if ($bg3.hasClass("inview")) {
+            bg3.css({'backgroundPosition': newPos(50, windowHeight, pos, 200, 0.5)});
+        }
+        if ($bg4.hasClass("inview")) {
+            bg4.css({'backgroundPosition': newPos(50, windowHeight, pos, 500, 0.7)});
+        }
+        if ($bg5.hasClass("inview")) {
+            bg5.css({'backgroundPosition': newPos(50, windowHeight, pos, 4000, 0.04)});
+        }
+        if ($bg6.hasClass("inview")) {
+            bg6.css({'backgroundPosition': newPos(50, windowHeight, pos, 3000, 0.1)});
+        }
+        if ($bg7.hasClass("inview")) {
+            bg7.css({'backgroundPosition': newPos(50, windowHeight, pos, 1000, 0.5)});
+        }
+        if ($bg8.hasClass("inview")) {
+            bg8.css({'backgroundPosition': newPos(50, windowHeight, pos, -1500, 0.3)});
+        }
+        if ($bg9.hasClass("inview")) {
+            bg9.css({'backgroundPosition': newPos(50, windowHeight, pos, 700, 0.2)});
+        } // TODO add new rules if needed
     }
 
     //MOBILE OPTIMIZED PARALLAX EXECUTION
