@@ -11,7 +11,7 @@ h1, h2, h3, h4 {
     font-weight: normal;
 }
 
-iframe {
+.video iframe {
     width: 450px;
     margin: 25px 0 20px;
 
@@ -36,7 +36,7 @@ ul {
 
 li {
     font-size: 18px;
-    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 h1.main-heading {
@@ -255,7 +255,7 @@ a:hover {
 }
 
 .resource-lnk {
-    margin-bottom: 10px;
+    margin: -5px 0 15px;
     display: block;
 }
 

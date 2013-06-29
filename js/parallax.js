@@ -126,16 +126,16 @@ $(document).ready(function () {
             bg3.css({'backgroundPosition': newPos(50, windowHeight, pos, 100, 0.5)});
         }
         if ($bg4.hasClass("inview")) {
-            bg4.css({'backgroundPosition': newPos(50, windowHeight, pos, 500, 0.7)});
+            bg4.css({'backgroundPosition': newPos(50, windowHeight, pos, 300, 1.3)});
         }
         if ($bg5.hasClass("inview")) {
             bg5.css({'backgroundPosition': newPos(50, windowHeight, pos, 4000, 0.04)});
         }
         if ($bg6.hasClass("inview")) {
-            bg6.css({'backgroundPosition': newPos(50, windowHeight, pos, 600, 0.2)});
+            bg6.css({'backgroundPosition': newPos(50, windowHeight, pos, 0, 1.6)});
         }
         if ($bg7.hasClass("inview")) {
-            bg7.css({'backgroundPosition': newPos(50, windowHeight, pos, -200, 0.5)});
+            bg7.css({'backgroundPosition': newPos(50, windowHeight, pos, 100, 1.8)});
         }
         if ($bg8.hasClass("inview")) {
             bg8.css({'backgroundPosition': newPos(50, windowHeight, pos, 1500, 0.3)});
@@ -144,7 +144,7 @@ $(document).ready(function () {
             bg9.css({'backgroundPosition': newPos(50, windowHeight, pos, 700, 0.2)});
         }
         if ($bg10.hasClass("inview")) {
-            bg10.css({'backgroundPosition': newPos(50, windowHeight, pos, 2300, 0.2)});
+            bg10.css({'backgroundPosition': newPos(50, windowHeight, pos, -350, 1.4)});
         }
         if ($bg11.hasClass("inview")) {
             bg11.css({'backgroundPosition': newPos(50, windowHeight, pos, 700, 0.2)});
